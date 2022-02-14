@@ -63,7 +63,7 @@ footer {
 User Story #15: My Technical Documentation page should use at least one media query.
  */
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 1024px) {
 
   body {
     display: block;
