@@ -1,0 +1,86 @@
+body {
+  display: flex;
+  align-items: flex-start;
+  background: #f5f6f7;
+  color: #1b1b32;
+  font-family: Helvetica;
+}
+
+header {
+  font-size: 1.5em;
+}
+
+/* 
+User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+*/
+#navbar {
+  float: left;
+  position: sticky;
+  top: 30px;
+  padding: 50px;
+  width: 15%;
+  min-width: 100px;
+}
+
+#navbar header {
+  padding-bottom: 20px;
+}
+
+#navbar a {
+  display: block;
+}
+
+#main-doc {
+  border-bottom: solid 5px black;
+  float: right;
+  width: 85%;
+  min-width: 800px;
+}
+
+#main-doc header {
+  padding-top: 20px;
+  border-top: solid 5px black;
+}
+
+.topic_1 {
+  border-top: none;
+}
+
+/* #footer {
+  position: relative;
+  width: 100%;
+}
+*/ 
+footer {
+/*   margin-top: auto;
+  align-self: flex-end;
+  width: 100%;
+ */
+ padding: 20px 0;  
+ border-top: solid 5px black;
+}
+/*
+User Story #15: My Technical Documentation page should use at least one media query.
+ */
+
+@media only screen and (max-width: 480px) {
+
+  body {
+    display: block;
+  }
+ 
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 100%;
+    background-color: #f5f6f7;
+  }
+  
+  #main-doc {
+    margin-top: 250px;
+    width: 100%;
+    min-width: 100%;
+  }
+}
+
